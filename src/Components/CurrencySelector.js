@@ -166,7 +166,7 @@ function CurrencySelector({selectedCurrency,handleCurrency}) {
     const countryCode=selectedCurrency.substring(0,2)
 
   return (
-    <div>
+    <div className='conversion-input'>
         <img src= {`https://flagsapi.com/${countryCode}/flat/64.png`} alt="input image" />
         <select class="input-option" value={selectedCurrency}
             onChange={handleCurrency}
